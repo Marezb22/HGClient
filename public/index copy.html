@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  
+    <title>Homepage</title>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="menu.css">
+  <link rel="stylesheet" type="text/css" href="footer.css">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  </head>
+
+  <body>
+
+    <!-- Sezione del Menù -->
+    <header id="header">
+    
+      <div id="logo">
+      <img src="hglogo.png" class="hglogo">
+      <a href="#" class="logo">NoleggioHopeless</a>
+      </div>
+
+      <div id="toggle"></div>
+      <div id="navbar">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="./ChiSiamo.html">Chi Siamo</a></li>
+          <li><a href="#contatti">Contatti</a></li>
+          <li><a href="#catalogo">Catalogo</a></li>
+          <li><a href="./registra.html">Registrazione</a></li>
+          <li><a href="#autenticazione">Autenticazione</a></li>
+         <!-- <li><a href="#autenticazione">Prenotazione</a></li> -->
+        </ul>
+      </div>
+    </header>
+
+    <script>
+      const header = document.getElementById('header');
+      const toggle = document.getElementById('toggle');
+      const navbar = document.getElementById('navbar');
+
+      document.onclick=function(e){
+        if(e.target.id !== 'header' && e.target.id !== 'toggle' && e.target.id !== 'navbar'){
+          toggle.classList.remove('active');
+          navbar.classList.remove('active');
+        }
+      }
+
+      toggle.onclick = function(){
+        toggle.classList.toggle('active');
+        navbar.classList.toggle('active');
+      }
+    </script>
+
+    <!-- Fine Menù -->
+    <!-- Sezione Informazioni Generiche -->
+    <section class="informazioni" id="informazioni">
+
+      <div class="container">
+          <div class="row justify-content-center">
+              <div class="col-12 col-lg-6">
+                  <div>
+                      <div>
+                          <h3>
+                              <strong class="title">Cosa è HopelessNoleggio?</strong>
+                          </h3>
+                          <p class="infohome">
+                              HopelessNoleggio è un servizio a pagamento, utilizzabile solo a Palermo e dintorni, che permettete il noleggio 
+                              di mezzi come AutoMobili, Motocicli ed anche Monopattini e Biciclette.
+                          </p>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-12 col-lg-6 vl" id="qualita">
+
+                  <div>
+                      <div class="icon-box">
+                          <span></span>
+                      </div>
+                      <div class="text-box">
+                          <h4>
+                              <strong>Affidabilità</strong>
+                          </h4>
+                          <p>You don't have to code to create your own site. 
+                              Select one of available themes in the Mobirise sitebuilder.
+                          </p>
+                      </div>
+                  </div>
+
+                  <div>
+                      <div class="icon-box">
+                          <span></span>
+                      </div>
+                      <div class="text-box">
+                          <h4>
+                              <strong>No-sovrapprezzo</strong>
+                          </h4>
+                          <p>All sites you create with the Mobirise web builder are mobile-friendly natively.
+                               No special actions required.
+                          </p>
+                      </div>
+                  </div>
+
+                  <div>
+                      <div class="icon-box">
+                          <span></span>
+                      </div>
+                      <div class="text-box">
+                          <h4>
+                              <strong>Auto/Moto uniche</strong>
+                          </h4>
+                          <p>Select the theme that suits you. Each theme in the Mobirise site builder contains
+                               a set of unique blocks.
+                          </p>
+                      </div>
+                  </div>
+
+              </div>
+          </div>
+      </div>
+  </section> 
+  <!-- Fine Prima Sezione -->
+
+  <section class="mezzihome">
+    
+    <div class="container" style="padding-bottom: 20px;">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-9">
+                <h3><strong class="title">I nostri mezzi</strong></h3>
+                <h4 class="texth">
+                    Offriamo ai nostri clienti una vasta scelta di mezzi: diversi modelli di Auto come le 
+                    , motocicli di qualsiasi cilindrata adatti ad ogni avventura e anche delle Bicicliette o Monopattini
+                    per muoversi in tranquillità in città.
+                </h4> 
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- immagine -->
+<section>
+    <div class="container">
+        <div>
+            <div class="col-12">
+                <div  style="text-align: center; display: block;">
+                    <img src="/immagini/home/automotohome.png" alt="AutoMotoHome" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- immagine generica + testo -->
+<section class="mezzi2home">
+
+    <div class="container" style="padding-bottom: 20px;">
+        <div>
+            <div class="col-12">
+                <div style="text-align: center; display: block;"> 
+                    <img src="/immagini/home/mezzi.png" alt="MezziHome" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+            <hr>
+            <div class="col-12 col-lg">
+                <div>
+                    <p>
+                        Use Mobirise website building software to create multiple sites for commercial and non-profit projects. 
+                        Click on the image in this block to replace it. You can add a description below your image, or on the side.
+                         If you want to hide some of the text fields, open the Block parameters, and uncheck relevant options.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contenuti Aggiuntivi -->
+<section>
+    
+    <div class="container">
+        <div>
+            <div class="col-12">
+                <h2><strong><a href="#" class="prenota">PRENOTA ORA UN MEZZO!</a></strong></h2>
+                <h4>Mobirise offers several themes to work with. Each theme includes a set of various blocks: headers,
+                     content blocks, galleries and sliders, footers, etc. To add needed blocks to your page, click on 
+                     <em>the red plus button </em>at the bottom right corner. You can select a needed block type. 
+                     To add a block, click on it in the list or drag it to your page.
+                </h4>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="content1 cid-s48vnjULo4" id="content1-c">
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="title col-12 col-md-9">
+                <h3 class="mbr-section-title mbr-fonts-style align-center mb-4 display-2"><strong>Create new pages</strong></h3>
+                <h4 class="mbr-section-subtitle align-center mbr-fonts-style mb-4 display-7">You can have multiple pages in your project. Find the menu icon at the top left corner. Move your cursor over it to open the main menu. Click on the <strong>Pages </strong>tab to manage your pages. Don't forget to set your page title and description. This info is used by browsers and search engines. The home page of your project cannot be removed.</h4>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+
+<section class="footer">
+      
+    <div class="footer">
+        <footer>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Home</a></li>
+                <li class="list-inline-item"><a href="#">Chi Siamo</a></li>
+                <li class="list-inline-item"><a href="#">Contatti</a></li>         
+            </ul>
+            <p class="copyright">Hopeless Group © 2021</p>
+        </footer>
+    </div>
+
+</section>
+
+
+  </body>
+</html>

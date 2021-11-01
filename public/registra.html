@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  
+    <title>Accedi</title>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="menu.css">
+  <link rel="stylesheet" type="text/css" href="footer.css">
+ <!-- <link rel="stylesheet" type="text/css" href="index.css"> -->
+ <!-- <link rel="stylesheet" type="text/css" href="reg.css"> -->
+  </head>
+
+  <body>
+
+    <!-- Sezione del Menù -->
+    <header id="header">
+    
+      <div id="logo">
+      <img src="hglogo.png" class="hglogo">
+      <a href="#" class="logo">NoleggioHopeless</a>
+      </div>
+
+      <div id="toggle"></div>
+      <div id="navbar">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="./ChiSiamo.html">Chi Siamo</a></li>
+          <li><a href="#contatti">Contatti</a></li>
+          <li><a href="#catalogo">Catalogo</a></li>
+          <li><a href="./registra.html">Registrazione</a></li>
+          <li><a href="#autenticazione">Autenticazione</a></li>
+         <!-- <li><a href="#autenticazione">Prenotazione</a></li> -->
+        </ul>
+      </div>
+    </header>
+
+    <script>
+      const header = document.getElementById('header');
+      const toggle = document.getElementById('toggle');
+      const navbar = document.getElementById('navbar');
+
+      document.onclick=function(e){
+        if(e.target.id !== 'header' && e.target.id !== 'toggle' && e.target.id !== 'navbar'){
+          toggle.classList.remove('active');
+          navbar.classList.remove('active');
+        }
+      }
+
+      toggle.onclick = function(){
+        toggle.classList.toggle('active');
+        navbar.classList.toggle('active');
+      }
+    </script>
+
+    <!-- Fine Menù -->
+
+    <!-- Sezione Informazioni Generiche -->
+
+    <!-- Fine Prima Sezione -->
+
+<!-- Footer -->
+
+<section class="footer">
+      
+    <div class="footer">
+        <footer>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Home</a></li>
+                <li class="list-inline-item"><a href="#">Chi Siamo</a></li>
+                <li class="list-inline-item"><a href="#">Contatti</a></li>         
+            </ul>
+            <p class="copyright">Hopeless Group © 2021</p>
+        </footer>
+    </div>
+
+</section>
+
+
+  </body>
+</html>
